@@ -1,12 +1,15 @@
+// surface area of sphere
 
 #include<stdio.h>
 #include<math.h>
 
-float AreaSquare(float fNo)
+#define PI 3.1416
+
+float SurfaceSphere(float fNo)
 {
     float fValue = 0.0f;
 
-    fValue = fNo*fNo;
+    fValue = 4*PI*fNo*fNo;
 
     return fValue;
     
@@ -14,21 +17,21 @@ float AreaSquare(float fNo)
 
 int main()
 {
-    float fSide = 0.0f;
+    float fRadius = 0.0f;
    
     float fArea = 0.0f;
 
     printf("========================================\n");
-    printf("Enter the side of square :==>> ");
-    scanf("%f",&fSide);
+    printf("Enter the Radius :==>> ");
+    scanf("%f",&fRadius);
     printf("========================================\n");
     
-    fArea = AreaSquare(fSide);
+    fArea = SurfaceSphere(fRadius);
 
     printf("========================================\n");
-    printf("Area of square Exactly is :==>>> %f\n",fArea);
-    printf("========================================\n");
-    printf("Area of square total is :==>>> %2.f\n",fArea);
+    printf("Area of surface sphere :==>>> %f\n",fArea);
     printf("========================================\n");
 
+    return 0;
 }
+    

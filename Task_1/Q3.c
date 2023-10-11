@@ -1,3 +1,4 @@
+// are of pentagon
 #include<stdio.h>
 #include<math.h>
 

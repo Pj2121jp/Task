@@ -1,3 +1,4 @@
+//Area of rectangle
 #include<stdio.h>
 
 int AreaRectangle(int iNo1, int iNo2)
